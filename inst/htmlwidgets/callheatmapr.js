@@ -13,7 +13,7 @@ HTMLWidgets.widget({
         options.start = new Date(parseInt(options.timestamp_start));
         var cal = new CalHeatMap();
         options.itemSelector = "#" + el.id;
-        $(options.itemSelector).html("");
+        document.getElementById(el.id).innerHTML = "";
       	cal.init(options);
       },
 
